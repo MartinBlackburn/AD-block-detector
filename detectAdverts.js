@@ -6,10 +6,10 @@ function detectAdverts() {
     iframe.id = "ads-text-iframe";
     iframe.src = "http://example.com/ads.html";
     
-    //add advert to the body
+    //add fake advert to the body
     document.body.appendChild(iframe);
  
-    //after 100ms check see if hte advert is blocked
+    //after 100ms check see if the fake advert is blocked
     setTimeout(function() {
         var iframe = document.getElementById("ads-text-iframe");
         
